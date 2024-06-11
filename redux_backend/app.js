@@ -13,12 +13,7 @@ var app = express();
 
 const mongoose = require('mongoose');
 
-// LOCALY CONENCTION TO DB //
-// mongoose.connect('mongodb://127.0.0.1:27017/test') 
-
-// MONGODB ATLAS CONENCTION TO DB //
-
-mongoose.connect('mongodb+srv://SSDIYORA7804:MONGODBSAHIL@cluster0.tcdyo4h.mongodb.net/studentdetails?retryWrites=true&w=majority')
+mongoose.connect('mongodb://127.0.0.1:27017/studentdetails')
   .then(() => console.log('DB CONNECTED SUCESSFULLY !!'))
   .catch((err) => console.log(err));
 
